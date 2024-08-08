@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/genral.css">
+    <link rel="stylesheet" href="./css/utility.css">
+    
+    <title>login page</title>
+</head>
+<body><div class="total invert" style="text-align: center;font-size: large;">
+    <h1  style="text-align: center;">welcome user</h1>
+    <form id="myform" class="flex" style="justify-content: center; flex-direction: column;align-items: center;gap: 20px;">
+<img  width="100px" src="./img/logo.svg">
+        <input type="email" placeholder="email">
+        <input type="password" placeholder="password"
+        >
+        <button>signin</button>
+    </form>
+</div>
+    <script >
+        document.addEventListener("DOMContentLoaded",function(){
+            document.querySelector("#myform").addEventListener("submit",(e)=>{
+            e.preventDefault()
+         
+            console.log("hi")
+            document.querySelector(".total").innerHTML="welcome back user"
+        })
+        })
+        
+    </script>
+</body>
+</html>

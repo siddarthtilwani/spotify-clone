@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/genral.css">
+    <link rel="stylesheet" href="./css/utility.css">
+    
+    <title>login page</title>
+</head>
+<body><div class="total flex " style="text-align: center;font-size: large;flex-direction: column;justify-content: center; align-items: center;">
+  <input type="text" style="width: 50vw;height: 50px;" placeholder="enter the Music to be searched">
+  <button class="btn" style="text-align: center;justify-content: center;align-items: center;display: flex;"><img  src="./img/search.svg" width="25px"> search</button>
+</div>
+    <script >
+        document.addEventListener("DOMContentLoaded",function(){
+            document.querySelector(".btn").addEventListener("click",(e)=>{
+            e.preventDefault()
+         
+            console.log("hi")
+            document.querySelector(".total").innerHTML="will be implemented in future"
+        })
+        })
+        
+    </script>
+</body>
+</html>
